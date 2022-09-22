@@ -1,0 +1,10 @@
+^C:\USERS\MAVAD\DOCUMENTS\GITHUB\TLSH\TEST\CMAKEFILES\96E9B36F7BC5495D9B171BDC2FA56ADC\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/mavad/Documents/GitHub/tlsh/test -BC:/Users/mavad/Documents/GitHub/tlsh/test --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/mavad/Documents/GitHub/tlsh/test/Project.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

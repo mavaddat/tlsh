@@ -1,7 +1,7 @@
 /*
  * TLSH is provided for use under two licenses: Apache OR BSD.
  * Users may opt to use either license depending on the license
- * restictions of the systems with which they plan to integrate
+ * restrictions of the systems with which they plan to integrate
  * the TLSH code.
  */ 
 
@@ -81,7 +81,7 @@ int main(int argc, char *argv[])
 	int len1 = strlen(str1);
 	int len2 = strlen(str2);
 
-	char minSizeBuffer1[512];
+	char minSizeBuffer1[512]{};
 	for (int i = 0; i < 511; i++) {
 		minSizeBuffer1[i] = i % 26 + 'A';
 	}
@@ -89,7 +89,7 @@ int main(int argc, char *argv[])
 	strncpy(minSizeBuffer1, str1, len1);
 	t1.final( (const unsigned char*) minSizeBuffer1, 512);
 
-	char minSizeBuffer2[1024];
+	char minSizeBuffer2[1024]{};
 	for (int i = 0; i < 1023; i++) {
 		minSizeBuffer2[i] = i % 26 + 'A';
 	}

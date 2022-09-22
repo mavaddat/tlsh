@@ -1,0 +1,9 @@
+C:/Users/mavad/Documents/GitHub/tlsh/test/CMakeFiles/simple_unittest.dir
+C:/Users/mavad/Documents/GitHub/tlsh/test/CMakeFiles/tlsh_unittest.dir
+C:/Users/mavad/Documents/GitHub/tlsh/test/CMakeFiles/timing_unittest.dir
+C:/Users/mavad/Documents/GitHub/tlsh/test/CMakeFiles/order_bug.dir
+C:/Users/mavad/Documents/GitHub/tlsh/test/CMakeFiles/tlsh_pattern.dir
+C:/Users/mavad/Documents/GitHub/tlsh/test/CMakeFiles/tlsh_parts.dir
+C:/Users/mavad/Documents/GitHub/tlsh/test/CMakeFiles/INSTALL.dir
+C:/Users/mavad/Documents/GitHub/tlsh/test/CMakeFiles/ALL_BUILD.dir
+C:/Users/mavad/Documents/GitHub/tlsh/test/CMakeFiles/ZERO_CHECK.dir

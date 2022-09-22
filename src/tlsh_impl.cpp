@@ -1,7 +1,7 @@
 /*
  * TLSH is provided for use under two licenses: Apache OR BSD.
  * Users may opt to use either license depending on the license
- * restictions of the systems with which they plan to integrate
+ * restrictions of the systems with which they plan to integrate
  * the TLSH code.
  */ 
 

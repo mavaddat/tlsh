@@ -3,7 +3,7 @@
 /*
  * TLSH is provided for use under two licenses: Apache OR BSD.
  * Users may opt to use either license depending on the license
- * restictions of the systems with which they plan to integrate
+ * restrictions of the systems with which they plan to integrate
  * the TLSH code.
  */ 
 
@@ -88,7 +88,7 @@ class TlshImpl;
   // changed the minimum data length to 256 for version 3.3
   #define MIN_DATA_LENGTH		50
   // added the -force option for version 3.5
-  // added the -conservatibe option for version 3.17
+  // added the -conservative option for version 3.17
   #define MIN_CONSERVATIVE_DATA_LENGTH	256
 #endif
 
@@ -97,7 +97,7 @@ class TlshImpl;
   // changed the minimum data length to 256 for version 3.3
   #define MIN_DATA_LENGTH		50
   // added the -force option for version 3.5
-  // added the -conservatibe option for version 3.17
+  // added the -conservative option for version 3.17
   #define MIN_CONSERVATIVE_DATA_LENGTH	256
 #endif
 

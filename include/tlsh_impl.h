@@ -1,7 +1,7 @@
 /*
  * TLSH is provided for use under two licenses: Apache OR BSD.
  * Users may opt to use either license depending on the license
- * restictions of the systems with which they plan to integrate
+ * restrictions of the systems with which they plan to integrate
  * the TLSH code.
  */ 
 
@@ -77,11 +77,11 @@
   #if defined CHECKSUM_3B
     #define INTERNAL_TLSH_STRING_LEN 138
     #define TLSH_CHECKSUM_LEN 3
-    // defined in tlsh.h   #define TLSH_STRING_LEN   138  // 2 + 3 + 64 bytes = 138 hexidecimal chars
+    // defined in tlsh.h   #define TLSH_STRING_LEN   138  // 2 + 3 + 64 bytes = 138 hexadecimal chars
   #else
     #define INTERNAL_TLSH_STRING_LEN 134
     #define TLSH_CHECKSUM_LEN 1
-    // defined in tlsh.h   #define TLSH_STRING_LEN   134  // 2 + 1 + 64 bytes = 134 hexidecimal chars
+    // defined in tlsh.h   #define TLSH_STRING_LEN   134  // 2 + 1 + 64 bytes = 134 hexadecimal chars
   #endif
 #endif
 
@@ -91,11 +91,11 @@
   #if defined CHECKSUM_3B
     #define INTERNAL_TLSH_STRING_LEN 74
     #define TLSH_CHECKSUM_LEN 3
-    // defined in tlsh.h   #define TLSH_STRING_LEN   74   // 2 + 3 + 32 bytes = 74 hexidecimal chars
+    // defined in tlsh.h   #define TLSH_STRING_LEN   74   // 2 + 3 + 32 bytes = 74 hexadecimal chars
   #else
     #define INTERNAL_TLSH_STRING_LEN 70
     #define TLSH_CHECKSUM_LEN 1
-    // defined in tlsh.h   #define TLSH_STRING_LEN   70   // 2 + 1 + 32 bytes = 70 hexidecimal chars
+    // defined in tlsh.h   #define TLSH_STRING_LEN   70   // 2 + 1 + 32 bytes = 70 hexadecimal chars
   #endif
 #endif
 
@@ -104,7 +104,7 @@
   #define EFF_BUCKETS         48
   #define CODE_SIZE           12   // 48 * 2 bits = 12 bytes
   #define TLSH_CHECKSUM_LEN 1
-  // defined in tlsh.h   #define TLSH_STRING_LEN   30   // 2 + 1 + 12 bytes = 30 hexidecimal chars
+  // defined in tlsh.h   #define TLSH_STRING_LEN   30   // 2 + 1 + 12 bytes = 30 hexadecimal chars
 #endif
 
 class TlshImpl

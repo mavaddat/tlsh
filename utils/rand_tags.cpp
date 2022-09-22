@@ -53,7 +53,7 @@ int total = 0;
 		count ++;
 	}
 // printf("total=%d count=%d\n", total, count);
-	int x = abs((int) random()) % total;
+	int x = abs((int) rand()) % total;
 	int idx = 0;
 	for (int ti=0; ti<count; ti++) {
 // printf("x=%d ti=%d\n", x, ti);
@@ -161,11 +161,11 @@ struct tagdef html_def[] = {
 static void html_tags(std::string &htmls, bool verbose)
 {
 	bool bodyFlag = true;
-	if (random() % 6 == 1)
+	if (rand() % 6 == 1)
 		bodyFlag = false;
 
-	if (random() % 20 == 1) {
-		if (random() % 10 == 1)
+	if (rand() % 20 == 1) {
+		if (rand() % 10 == 1)
 			htmls += "<!doctype >";
 		else
 			htmls += "<!DOCTYPE >";
@@ -176,7 +176,7 @@ static void html_tags(std::string &htmls, bool verbose)
 	htmls += html_tag_str;
 	htmls += '\n';
 
-	if (random() % 10 == 1) {
+	if (rand() % 10 == 1) {
 		head_meta(htmls);
 	}
 
@@ -208,7 +208,7 @@ std::string htmls;
 Tlsh n;
 bool verbose = false;
 	int showvers = 0;
-	srandom(seed);
+	srand(seed);
 	// if (seed == 4628)
 	// verbose = true;
 	html_tags(htmls, verbose);
@@ -376,21 +376,21 @@ static void rhtml_contents(std::string &htmls, int *ntags, int *ndistinct_tags)
 	//	have the == NULL test to be consistent - pass regression tests
 	if ((*ntags <= 0) && (ndistinct_tags == NULL))
 		return; 
-	if (random() % 10 == 1) {
+	if (rand() % 10 == 1) {
 		anchor(htmls);
 		*ntags		= *ntags - 2;
 		*ndistinct_tags = *ndistinct_tags - 1;
-	} else if (random() % 20 == 1) {
+	} else if (rand() % 20 == 1) {
 		html_table(htmls, ntags);
 		*ndistinct_tags = *ndistinct_tags - 1;
-	} else if (random() % 3 == 1) {
+	} else if (rand() % 3 == 1) {
 		int oneoff_tag = random_tags(oneoff_def);
 		char *oneoff_tag_str = (char *) oneoff_def[oneoff_tag].s;
 		htmls += oneoff_tag_str;
 		htmls += '\n';
 		*ntags		= *ntags - 1;
 		*ndistinct_tags = *ndistinct_tags - 1;
-	} else if (random() % 3 == 1) {
+	} else if (rand() % 3 == 1) {
 		return;
 	} else {
 		int rtag = random_tags(random_def);
@@ -407,10 +407,10 @@ static void rhtml_contents(std::string &htmls, int *ntags, int *ndistinct_tags)
 
 static void html_contents(std::string &htmls)
 {
-	int ntags = random() % 32;
+	int ntags = rand() % 32;
 	int loop;
 	for (loop=0; loop<8; loop++) {
-		if (random() % 2 == 1)
+		if (rand() % 2 == 1)
 			break;
 		ntags = ntags * 2;
 	}
@@ -487,7 +487,7 @@ struct tagdef tr_def[] = {
 
 static void html_table(std::string &htmls, int *ntags)
 {
-char * col_tag_str[MAX_COL];
+char * col_tag_str[MAX_COL]{};
 char * row_tag_str;
 	int table_tag = random_tags(table_def);
 	char *table_tag_str = (char *) table_def[table_tag].s;
@@ -495,15 +495,15 @@ char * row_tag_str;
 	htmls += '\n';
 	*ntags = *ntags - 1;
 
-	int nrow = random() % MAX_ROW;
-	int ncol = random() % MAX_COL;
-	if (random() % 2 == 1)
+	int nrow = rand() % MAX_ROW;
+	int ncol = rand() % MAX_COL;
+	if (rand() % 2 == 1)
 		nrow = nrow / 2;
-	if (random() % 2 == 1)
+	if (rand() % 2 == 1)
 		nrow = nrow / 2;
-	if (random() % 2 == 1)
+	if (rand() % 2 == 1)
 		ncol = ncol / 2;
-	if (random() % 2 == 1)
+	if (rand() % 2 == 1)
 		ncol = ncol / 2;
 	if (nrow <= 0)
 		nrow = 1;
