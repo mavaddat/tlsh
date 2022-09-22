@@ -30,3 +30,4 @@ Windows/rand_tags/rand_tags.VC2008.vcproj.*
 Windows/rand_tags/Debug/
 Windows/rand_tags/Release/
 *.log
+/Windows/.vs/tlsh.VC2008
