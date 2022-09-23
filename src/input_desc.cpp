@@ -92,7 +92,7 @@ static int read_file_eval_tlsh_splitline(char *fname, struct InputDescr *inputd,
 	// 2. read the file
 	///////////////////////////////////////
 	char *x;
-	char linebuf[2048];
+	char linebuf[2048]{};
 
 	fd = fopen(fname, "r");
 	if (fd==NULL) {
@@ -152,7 +152,7 @@ struct FileName *r2;
 	// printf("compare %s %s\n", r1->name, r2->name);
         return (strcmp(r1->full_fname, r2->full_fname));
 }
-
+__attribute__((visibility("default")))
 int set_input_desc(char *dirname, char *listname, int listname_col, int listname_csv,
 	char *fname, char *digestname, int show_details, int fc_cons_option, char *splitlines, struct InputDescr *inputd, int showvers)
 {

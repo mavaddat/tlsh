@@ -138,6 +138,7 @@ size_t buf_offset = 0;
 	}
 }
 
+__attribute__((visibility("default")))
 const char *convert_special_chars(char *filename, char *buf, size_t bufSize, int output_json)
 {
 	int len = strlen(filename);
@@ -181,6 +182,7 @@ const char *convert_special_chars(char *filename, char *buf, size_t bufSize, int
 }
 
 ////////////////////////////////////////////////////////////////////////////////
+__attribute__((visibility("default")))
 
 int read_file_eval_tlsh(char *fname, Tlsh *th, int show_details, int fc_cons_option, int showvers)
 {
@@ -402,6 +404,7 @@ int read_files_from_dir(char *dirname, struct FileName *fnames, int max_fnames, 
 	return(err);
 }
 
+__attribute__((visibility("default")))
 void freeFileName(struct FileName *fnames, int count)
 {
     for (int i=0; i<count; i++) {
