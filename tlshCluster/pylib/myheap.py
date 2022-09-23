@@ -1,6 +1,6 @@
 #################################################################
 # TLSH is provided for use under two licenses: Apache OR BSD. Users may opt to use either license depending on the license
-# restictions of the systems with which they plan to integrate the TLSH code.
+# restrictions of the systems with which they plan to integrate the TLSH code.
 #
 # Apache License: # Copyright 2013 Trend Micro Incorporated
 #

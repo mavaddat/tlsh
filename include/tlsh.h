@@ -115,7 +115,9 @@ class TlshImpl;
 #ifdef WINDOWS
 // 27/Nov/2020
 // #include <WinFunctions.h>
-	#define TLSH_API
+    #ifndef TLSH_API
+        #define TLSH_API
+    #endif
 #else 
 	#if defined(__SPARC) || defined(_AS_MK_OS_RH73)
 	   #define TLSH_API
