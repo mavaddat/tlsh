@@ -67,7 +67,7 @@
 #include <string.h>
 #include <assert.h>
 
-#ifdef WINDOWS
+#if defined(WIN32) || defined(_WIN32) || defined(__WIN32) || defined(WINDOWS)
 #include <WinFunctions.h>
 #else
 // for directory processing on Unix / Linux
@@ -157,8 +157,7 @@ static void trendLSH_ut(char* compare_fname, char* dirname, char* outfname, char
 
 	char buf1[2000];
 	char buf2[2000];
-	char nullstr[6];
-	sprintf(nullstr, "TNULL");
+	char nullstr[] = "TNULL";
 
 	if (xref) {
 		if (output_json) {

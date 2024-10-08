@@ -731,3 +731,20 @@ TIME	ms= 21.00	per million iterations
 	resolve issue #116
 	Library will not compile on CENTOS 7 (use of threads)
 </PRE>
+
+**4.12.0**
+<PRE>
+16/09/2024
+	document what has changed since **4.11.2** on 23/10/2021
+	Merge pull request #137 - this fixed a memory leak in py-tlsh
+	Merge pull request #134 - this improved the ifdef WINDOWS to be more portable
+</PRE>
+
+**4.12.1**
+<PRE>
+08/10/2024
+	Merge pull request #146 - Remove call to sprintf() to avoid warnings
+	Merge pull request #141 - py_ext: use PyVarObject_HEAD instead of PyObject_HEAD_INIT
+	Merge pull request #138 - Build: Define default options only on "default"
+	Merge pull request #136 - Bug Fix+Portability: Improve portability by integral division
+</PRE>
