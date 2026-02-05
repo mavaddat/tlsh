@@ -151,6 +151,7 @@ public:
     int Q2ratio();
     int Checksum(int k);
     int BucketValue(int bucket);
+    void WriteVector(unsigned char *vec);
     int HistogramCount(int bucket);
 
     /* calculate difference */

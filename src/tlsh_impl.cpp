@@ -988,6 +988,24 @@ unsigned char bv;
 	}
 	return(p4);
 }
+
+void TlshImpl::WriteVector(unsigned char *vec)
+{
+        vec[0] = Checksum(0);
+        vec[1] = Lvalue();
+        vec[2] = Q1ratio();
+        vec[3] = Q2ratio();
+
+        int idx = CODE_SIZE-1;
+	for (int vi=4; vi < 36; vi++) {
+                vec[vi] = this->lsh_bin.tmp_code[idx--];
+        }
+	if (idx != -1) {
+		printf("error in WriteVector: idx=%d\n", idx);
+		exit(1);
+	}
+}
+
 int TlshImpl::HistogramCount(int bucket)
 {
 	if (this->a_bucket == NULL)

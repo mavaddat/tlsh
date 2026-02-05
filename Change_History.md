@@ -766,3 +766,9 @@ TIME	ms= 21.00	per million iterations
 06/02/2026
 	Refactor lsh_bin_struct to provide easy access to byte vector
 </PRE>
+
+**4.13.3**
+<PRE>
+06/02/2026
+	Add function WriteVector(unsigned char *vec) to get the byte array of a TLSH
+</PRE>
