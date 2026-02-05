@@ -296,10 +296,10 @@ TLSH similarity is expressed as a difference score:
 
 # Current Version
 
-**4.13.2**
+**4.13.3**
 <PRE>
 06/02/2026
-	Refactor lsh_bin_struct to provide easy access to byte vector
+	Add function WriteVector(unsigned char *vec) to get the byte array of a TLSH
 </PRE>
 
 # Change History
