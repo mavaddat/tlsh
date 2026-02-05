@@ -754,3 +754,9 @@ TIME	ms= 21.00	per million iterations
 05/02/2026
 	Add CSV files to tlsh_pattern (preparation for a new py-tlsh release)
 </PRE>
+
+**4.13.1**
+<PRE>
+06/02/2026
+	Change default behaviour to output T1 at the start of the digest
+</PRE>
