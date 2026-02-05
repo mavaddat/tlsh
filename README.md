@@ -296,10 +296,10 @@ TLSH similarity is expressed as a difference score:
 
 # Current Version
 
-**4.13.1**
+**4.13.2**
 <PRE>
 06/02/2026
-	Change default behaviour to output T1 at the start of the digest
+	Refactor lsh_bin_struct to provide easy access to byte vector
 </PRE>
 
 # Change History
